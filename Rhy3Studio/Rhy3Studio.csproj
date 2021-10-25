@@ -171,10 +171,6 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="AddToCart.aspx" />
-    <Content Include="App_Data\Rhy3Studio.mdf" />
-    <Content Include="App_Data\Rhy3Studio_log.ldf">
-      <DependentUpon>Rhy3Studio.mdf</DependentUpon>
-    </Content>
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -240,6 +236,9 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="ShoppingCart.aspx" />
     <Content Include="Site.Master" />
+    <Content Include="sp_chassis.aspx" />
+    <Content Include="sp_Profit.aspx" />
+    <Content Include="sp_up_client.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -429,6 +428,27 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="sp_chassis.aspx.cs">
+      <DependentUpon>sp_chassis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sp_chassis.aspx.designer.cs">
+      <DependentUpon>sp_chassis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Profit.aspx.cs">
+      <DependentUpon>sp_Profit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sp_Profit.aspx.designer.cs">
+      <DependentUpon>sp_Profit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sp_up_client.aspx.cs">
+      <DependentUpon>sp_up_client.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sp_up_client.aspx.designer.cs">
+      <DependentUpon>sp_up_client.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Startup.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
@@ -439,6 +459,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="StyleSheets\" />
   </ItemGroup>
   <ItemGroup>
