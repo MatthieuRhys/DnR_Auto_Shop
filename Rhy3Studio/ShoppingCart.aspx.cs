@@ -32,6 +32,13 @@ namespace Rhy3Studio
                     ShoppingCartTitle.InnerText = "Shopping Cart is Empty";
                     UpdateBtn.Visible = false;
                 }
+
+
+            }
+
+            if (HttpContext.Current.User.IsInRole("Administrator"))
+            {
+                CheckOut.Visible = true;
             }
         }
 
@@ -85,6 +92,15 @@ namespace Rhy3Studio
         protected void UpdateBtn_Click(object sender, EventArgs e)
         {
             UpdateCartItems();
+        }
+
+        protected void Checkout(object sender, EventArgs e)
+        {
+
+            Response.Redirect("Default.aspx");
+
+
+          
         }
     }
 }

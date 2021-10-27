@@ -21,11 +21,13 @@
                     <td/>
                 </EmptyItemTemplate>
                 <GroupTemplate>
+                    
                     <tr id="itemPlaceholderContainer" runat="server">
                         <td id="itemPlaceholder" runat="server"></td>
                     </tr>
                 </GroupTemplate>
                 <ItemTemplate>
+                    <
                     <td runat="server">
                         <table>
                             <tr>
@@ -38,6 +40,7 @@
                             </tr>
                             <tr>
                                 <td>
+
                                     <href="ProductDetails.aspx?productID=<%#:Item.ProductID%>">
                                     </a>
                                     <br />

@@ -39,7 +39,7 @@
         <asp:Button ID="UpdateBtn" runat="server" Text="Update" OnClick="UpdateBtn_Click" />
       </td>
       <td>
-                     
+                   <asp:Button ID="CheckOut" Visible="false" runat ="server" Text="CheckOut" OnClick="Checkout" />   
       </td>
     </tr>
     </table>

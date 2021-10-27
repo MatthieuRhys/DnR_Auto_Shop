@@ -106,19 +106,20 @@
                 </div>
             </div>
         </div>
+        <br /> 
         <div id="CategoryMenu" style="text-align: center">
         <asp:ListView ID="categoryList"
             ItemType="Rhy3Studio.Models.Category"
             runat="server"
             SelectMethod="GetCategories">
-            <ItemTemplate> </br>
+            <ItemTemplate> 
                 <b style="font-size: large; font-style: normal">
                     <a href="/ProductList.aspx?id=<%#: Item.CategoryID %>">
                         <%#: Item.CategoryName %>
                     </a>
                 </b>
                 </ItemTemplate>
-                <ItemSeparatorTemplate>  |  </ItemSeparatorTemplate>
+                <ItemSeparatorTemplate>|</ItemSeparatorTemplate>
             </asp:ListView>
         </div>
         <div class="container body-content">
@@ -126,7 +127,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Rhy3 Studio</p>
+                <p>&copy; <%: DateTime.Now.Year %> - DnR Auto</p>
             </footer>
         </div>
     </form>

@@ -1,13 +1,14 @@
 ﻿<%@ Page Title="Register" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="Rhy3Studio.Account.Register" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-    <h2><%: Title %>.</h2>
+    <h2 style="text-align:center;font-weight:bold;font-family:Arial, Helvetica, sans-serif"><%: Title %></h2>
     <p class="text-danger">
         <asp:Literal runat="server" ID="ErrorMessage" />
     </p>
 
-    <div class="form-horizontal">
-        <h4>Create a new account</h4>
+    <p> <h4 style="text-align:center;font-weight:400;font-family:Arial, Helvetica, sans-serif">Create a new account</h4></p>
+    <div class="form-horizontal" style="margin-left:270px">
+        
         <hr />
         <asp:ValidationSummary runat="server" CssClass="text-danger" />
         <div class="form-group">
@@ -37,8 +38,8 @@
             </div>
         </div>
         <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <asp:Button runat="server" OnClick="CreateUser_Click" Text="Register" CssClass="btn btn-default" />
+            <div class="col-md-offset-2 col-md-10" style="margin-left:265px">
+                <asp:Button runat="server" OnClick="CreateUser_Click" Text="Register" style="height:40px;background-color:darkcyan;font-weight:bold;color:black" CssClass="btn btn-default" />
             </div>
         </div>
     </div>
