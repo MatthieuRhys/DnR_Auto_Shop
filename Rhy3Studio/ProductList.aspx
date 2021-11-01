@@ -4,7 +4,7 @@
     <section>
         <div>
             <hgroup>
-                <h2><%: Page.Title %></h2>
+                <h2 style="text-align:center;font-weight:bold"><%: Page.Title %></h2>
             </hgroup>
 
             <asp:ListView ID="productList" runat="server" 
@@ -27,13 +27,13 @@
                     </tr>
                 </GroupTemplate>
                 <ItemTemplate>
-                    <
+                
                     <td runat="server">
                         <table>
                             <tr>
                                 <td>
                                   <href="ProductDetails.aspx?productID=<%#:Item.ProductID%>">
-                                      <img src="/images/<%#:Item.ImagePath %>" width="320" height="250"
+                                      <img src="/images/<%#:Item.ImagePath %>" width="300" height="250"
                                           style="border:solid"? />
                                   </a>
                                 </td>

@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Rhy3Studio.Account {
-    
-    
-    public partial class ManagePassword {
-        
+namespace Rhy3Studio.Account
+{
+
+
+    public partial class ManagePassword
+    {
+
         /// <summary>
         /// setPassword control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace Rhy3Studio.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.PlaceHolder setPassword;
-        
+
         /// <summary>
         /// password control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace Rhy3Studio.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox password;
-        
+
         /// <summary>
         /// confirmPassword control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace Rhy3Studio.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox confirmPassword;
-        
+
         /// <summary>
         /// changePasswordHolder control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace Rhy3Studio.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.PlaceHolder changePasswordHolder;
-        
+
         /// <summary>
         /// CurrentPasswordLabel control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace Rhy3Studio.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label CurrentPasswordLabel;
-        
+
         /// <summary>
         /// CurrentPassword control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace Rhy3Studio.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox CurrentPassword;
-        
+
         /// <summary>
         /// NewPasswordLabel control.
         /// </summary>
@@ -74,7 +76,7 @@ namespace Rhy3Studio.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label NewPasswordLabel;
-        
+
         /// <summary>
         /// NewPassword control.
         /// </summary>
@@ -83,7 +85,7 @@ namespace Rhy3Studio.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox NewPassword;
-        
+
         /// <summary>
         /// ConfirmNewPasswordLabel control.
         /// </summary>
@@ -92,7 +94,7 @@ namespace Rhy3Studio.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label ConfirmNewPasswordLabel;
-        
+
         /// <summary>
         /// ConfirmNewPassword control.
         /// </summary>

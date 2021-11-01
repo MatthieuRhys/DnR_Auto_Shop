@@ -2,6 +2,21 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
+
+    
+    <div class="jumbotron" style="background-image:url(images/BMWX6.jpg);background-size:1200px">
+     
+        <p> <br /> <br /> <br /> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p>
+
+       <%-- <h1 style="text-align:center;font-weight:bold;font-size:30px;color:black;padding-bottom:300px">DNR AUTO</h1>--%>
+      
+    </div>
+
+
+
+
+
+<%--
    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner" >
             <div class="carousel-item active" style="max-block-size:650px">
@@ -43,6 +58,6 @@
         </a>
            </div>
 
-</div> 
+</div> --%>
 
 </asp:Content>

@@ -1,0 +1,37 @@
+﻿body {
+    background: rgb(225,198,242);
+    background: linear-gradient(90deg, rgba(225,198,242,1) 0%, rgba(235,201,201,1) 50%, rgba(241,217,183,1) 100%);
+}
+
+
+#brand:hover {
+    
+    text-shadow: 2px 2px 5px #7707f5
+}
+
+
+
+#navbar{
+    background-color:powderblue;
+    color:black;
+}
+
+
+#list li:hover {
+    text-shadow: 2px 2px 5px red;
+
+   
+}
+
+#list>li>a{
+        color:black;
+        
+}
+
+.navbar-nav > li > #navbarDropdown {
+    background-color: transparent;
+}
+
+    .navbar-nav > li > #navbarDropdown > a:hover {
+        text-shadow: 2px 2px 5px red;
+    }

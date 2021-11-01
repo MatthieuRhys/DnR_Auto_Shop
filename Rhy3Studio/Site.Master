@@ -13,7 +13,7 @@
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
+    <link href="SiteMaster.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
@@ -37,7 +37,7 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div id="navbar" class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -45,14 +45,51 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">D&R Auto Shop</a>
-                    <img src="Photos/logo.jpg" width="60" height="60"  />
+                   
                 </div>
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
+                    <ul  id="list" class="nav navbar-nav">
 
 
-                        <li> <a runat="server" Id="chassisLink" visible ="false" 
+      <li class="nav-item dropdown" >
+      
+          <a class="nav-link  dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          User function <span class="glyphicon glyphicon-triangle-bottom"> </span>
+        </a>
+
+
+        <div  visible="false" class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+            <a class="dropdown-item" runat="server" Id="chassisLink" visible ="false" 
+                            href="~/Admin/Find Chassis Number">Find Chassis Number</a>
+             <div class="dropdown-divider"></div>
+
+              <a class="dropdown-item" runat="server" Id="upclient" visible ="false" 
+                            href="~/Admin/Update Client">Update Client</a>
+
+            
+             <div class="dropdown-divider"></div>
+             <a class="dropdown-item" runat="server" Id="promo" visible ="false" 
+                            href="~/Admin/Promotion">Promotion</a>
+
+             <div class="dropdown-divider"></div>
+            <a class="dropdown-item" runat="server" Id="efflink" visible ="false" 
+                            href="~/Admin/Efficiency">Efficiency </a>
+             <div class="dropdown-divider"></div>
+            <a class="dropdown-item" runat="server" Id="clientLink" visible ="false" 
+                            href="~/Admin/Find Client">  Find Client </a>
+             <div class="dropdown-divider"></div>
+            <a class="dropdown-item" runat="server" Id="profitLink" visible ="false" 
+                            href="~/Admin/Profitability"> Profitability </a>
+
+         
+        </div>
+      </li>
+
+
+
+
+                   <%--     <li> <a runat="server" Id="chassisLink" visible ="false" 
                             href="~/Admin/Find Chassis Number">Find Chassis Number</a>
 
 
@@ -75,7 +112,7 @@
                             href="~/Admin/Profitability"> Profitability </a>
 
 
-                        </li>
+                        </li>--%>
 
 
 
@@ -87,21 +124,25 @@
                         <li><a runat="server" href="~/Contact">Contact</a></li>
                          <li><a runat="server" href="~/ShoppingCart" ID="cartCount">&nbsp;</a></li>
                     </ul>
+                     <a style="margin-left:100px;color:black;font-weight:bold;" id="brand" class="navbar-brand" runat="server" href="~/">D&R Auto Shop</a>
+                   <%-- <img src="Photos/logo.jpg" width="60" height="60"  />--%>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
+                        
                         <AnonymousTemplate>
-                            <ul class="nav navbar-nav navbar-right">
+                            <ul class="nav navbar-nav navbar-right" >
                                 <li><a runat="server" href="~/Account/Register">Register</a></li>
                                 <li><a runat="server" href="~/Account/Login">Log in</a></li>
                             </ul>
                         </AnonymousTemplate>
                         <LoggedInTemplate>
-                            <ul class="nav navbar-nav navbar-right">
+                            <ul class="nav navbar-nav navbar-right" >
                                 <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
                                 <li>
                                     <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
                                 </li>
                             </ul>
                         </LoggedInTemplate>
+                    
                     </asp:LoginView>
                 </div>
             </div>

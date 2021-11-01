@@ -24,6 +24,24 @@ namespace Rhy3Studio
         protected global::System.Web.UI.HtmlControls.HtmlAnchor chassisLink;
 
         /// <summary>
+        /// upclient control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor upclient;
+
+        /// <summary>
+        /// promo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor promo;
+
+        /// <summary>
         /// efflink control.
         /// </summary>
         /// <remarks>
@@ -58,6 +76,15 @@ namespace Rhy3Studio
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor cartCount;
+
+        /// <summary>
+        /// brand control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor brand;
 
         /// <summary>
         /// categoryList control.

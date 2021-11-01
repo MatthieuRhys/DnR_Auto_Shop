@@ -3,7 +3,7 @@ using System.Data.Entity;
 
 namespace Rhy3Studio.Models
 {
-    public class ProductDatabaseInitializer : DropCreateDatabaseAlways<ProductContext>
+    public class ProductDatabaseInitializer : DropCreateDatabaseAlways <ProductContext>
     {
         protected override void Seed(ProductContext context)
         {
@@ -74,45 +74,52 @@ namespace Rhy3Studio.Models
                     CategoryID = 1
                 },
 
-            /*    new Product
-                {
-                    ProductID = 5,
-                    ProductName = "Nikon AF-S FX NIKKOR 16-35mm",
-                    Description = "Best basic full-frame lens",
-                    ImagePath = "nikkor-16-35mm-.jpg",
-                    UnitPrice = 1500.00,
-                    CategoryID = 2
-                },
+                       
+
 
                 new Product
                 {
-                    ProductID = 6,
-                    ProductName = "Canon EF 100-400mm",
-                    Description = "Best long-range zoom",
-                    ImagePath = "canon-ef-100-400mm.jpg",
+                    ProductID = 5,
+                    ProductName = "Service ",
+                    Description = "Oil and Coolant change",
+                    ImagePath = "oil-change2.jpg ",
                     UnitPrice = 800.00,
                     CategoryID = 2
                 },
 
                 new Product
                 {
-                    ProductID = 7,
-                    ProductName = "Canon EF-S 24mm",
-                    Description = "Best pancake lens",
-                    ImagePath = "canon-ef-s-24mm.jpg",
+                    ProductID = 6,
+                    ProductName = " Control Arm Repair",
+                    Description = " Best Control Arm Repair",
+                    ImagePath = "ball-joint-bolted-large.jpg ",
                     UnitPrice = 890.00,
                     CategoryID = 2
                 },
 
                 new Product
                 {
-                    ProductID = 8,
-                    ProductName = "Rokinon 14mm",
-                    Description = "Wide angle bargain",
-                    ImagePath = "rokinon-14mm.jpg",
+                    ProductID = 7,
+                    ProductName = "Front-end Work",
+                    Description = " Best Front-end Work",
+                    ImagePath = "front-suspension-design-1024x683.jpg  ",
                     UnitPrice = 1900.00,
                     CategoryID = 2
-                },*/
+                },
+
+                
+
+                 new Product
+                {
+                    ProductID = 8,
+                    ProductName = " Tire Change",
+                    Description = "Best Tire Change",
+                    ImagePath = "01-change-tyre-barum-data.jpg ",
+                    UnitPrice = 1900.00,
+                    CategoryID = 2
+                },
+
+
             };
 
             return products;

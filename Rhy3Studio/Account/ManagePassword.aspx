@@ -1,16 +1,16 @@
 ﻿<%@ Page Title="Manage Password" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ManagePassword.aspx.cs" Inherits="Rhy3Studio.Account.ManagePassword" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.</h2>
+    <h2 style="text-align:center;font-weight:bold"><%: Title %></h2>
     <div class="form-horizontal">
-        <section id="passwordForm">
-            <asp:PlaceHolder runat="server" ID="setPassword" Visible="false">
+        <section id="passwordForm" >
+     <%--       <asp:PlaceHolder runat="server" ID="setPassword" Visible="false">
                 <p>
                     You do not have a local password for this site. Add a local
                         password so you can log in without an external login.
                 </p>
                 <div class="form-horizontal">
-                    <h4>Set Password Form</h4>
+                    <h4 >Set Password Form</h4>
                     <asp:ValidationSummary runat="server" ShowModelStateErrors="true" CssClass="text-danger" />
                     <hr />
                     <div class="form-group">
@@ -44,14 +44,14 @@
                         </div>
                     </div>
                 </div>
-            </asp:PlaceHolder>
+            </asp:PlaceHolder>--%>
 
-            <asp:PlaceHolder runat="server" ID="changePasswordHolder" Visible="false">
-                <div class="form-horizontal">
-                    <h4>Change Password Form</h4>
+            <asp:PlaceHolder runat="server" ID="changePasswordHolder" Visible="false" >
+                <div class="form-horizontal" >
+                    <h4 style="text-align:center;font-weight:bold">Change Password Form</h4>
                     <hr />
-                    <asp:ValidationSummary runat="server" ShowModelStateErrors="true" CssClass="text-danger" />
-                    <div class="form-group">
+                    <asp:ValidationSummary runat="server" ShowModelStateErrors="true" CssClass="text-danger"  />
+                    <div class="form-group" style="margin-left:200px">
                         <asp:Label runat="server" ID="CurrentPasswordLabel" AssociatedControlID="CurrentPassword" CssClass="col-md-2 control-label">Current password</asp:Label>
                         <div class="col-md-10">
                             <asp:TextBox runat="server" ID="CurrentPassword" TextMode="Password" CssClass="form-control" />
@@ -60,7 +60,7 @@
                                 ValidationGroup="ChangePassword" />
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="margin-left:200px">
                         <asp:Label runat="server" ID="NewPasswordLabel" AssociatedControlID="NewPassword" CssClass="col-md-2 control-label">New password</asp:Label>
                         <div class="col-md-10">
                             <asp:TextBox runat="server" ID="NewPassword" TextMode="Password" CssClass="form-control" />
@@ -69,7 +69,7 @@
                                 ValidationGroup="ChangePassword" />
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="margin-left:200px">
                         <asp:Label runat="server" ID="ConfirmNewPasswordLabel" AssociatedControlID="ConfirmNewPassword" CssClass="col-md-2 control-label">Confirm new password</asp:Label>
                         <div class="col-md-10">
                             <asp:TextBox runat="server" ID="ConfirmNewPassword" TextMode="Password" CssClass="form-control" />
@@ -81,9 +81,9 @@
                                 ValidationGroup="ChangePassword" />
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="margin-left:280px">
                         <div class="col-md-offset-2 col-md-10">
-                            <asp:Button runat="server" Text="Change Password" ValidationGroup="ChangePassword" OnClick="ChangePassword_Click" CssClass="btn btn-default" />
+                            <asp:Button  height="50" Width="170"  runat="server" Text="Change Password" ValidationGroup="ChangePassword" OnClick="ChangePassword_Click" CssClass="btn btn-success" />
                         </div>
                     </div>
                 </div>

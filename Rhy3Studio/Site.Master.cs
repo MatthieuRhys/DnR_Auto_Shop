@@ -78,6 +78,8 @@ namespace Rhy3Studio
                 efflink.Visible = true;
                 clientLink.Visible = true;
                 profitLink.Visible = true;
+                upclient.Visible = true;
+                promo.Visible = true;
 
             }
 
@@ -86,6 +88,7 @@ namespace Rhy3Studio
             {
                 chassisLink.Visible = true;
                 clientLink.Visible = true;
+                upclient.Visible = true;
             }
 
 
