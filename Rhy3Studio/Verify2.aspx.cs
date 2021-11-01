@@ -11,6 +11,7 @@ namespace Rhy3Studio
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
             Label1.Text = "P98XL3";
         }
 
@@ -26,10 +27,11 @@ namespace Rhy3Studio
             if (Validate(verify.Text, Label1.Text) == true)
             {
                 Response.Redirect("~/Default.aspx");
+                verify.Text = null;
             }
             else
             {
-                err.Text = " Error!";
+                err.Text = "You entered a wrong code";
             }
         }
     }

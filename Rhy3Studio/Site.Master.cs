@@ -80,6 +80,7 @@ namespace Rhy3Studio
                 profitLink.Visible = true;
                 upclient.Visible = true;
                 promo.Visible = true;
+                age.Visible = true;
 
             }
 

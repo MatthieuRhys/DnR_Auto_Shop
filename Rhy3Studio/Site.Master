@@ -71,6 +71,10 @@
              <div class="dropdown-divider"></div>
              <a class="dropdown-item" runat="server" Id="promo" visible ="false" 
                             href="~/Admin/Promotion">Promotion</a>
+             <div class="dropdown-divider"></div>
+                <a class="dropdown-item" runat="server" Id="age" visible ="false" 
+                            href="~/Admin/Find Age">Find Age</a>
+             <div class="dropdown-divider"></div>
 
              <div class="dropdown-divider"></div>
             <a class="dropdown-item" runat="server" Id="efflink" visible ="false" 

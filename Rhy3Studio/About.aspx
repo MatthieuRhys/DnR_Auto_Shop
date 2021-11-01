@@ -3,6 +3,28 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
 
+    <style> 
+
+        #brit{
+
+            padding-left:400px;
+            padding-bottom:20px;
+        }
+
+        h1{
+            font-weight:bold;
+            color:black;
+        }
+
+       p{
+           color:black;
+       }
+    </style>
+    
+    
+    
+    
+    
     <h1 style="text-align: center"> <%: Title%> </h1>
 
 
@@ -17,41 +39,71 @@
 
     </p>
 
-    <asp:Table id="iMAGE" runat="server"> 
 
-        <asp:TableRow> <asp:TableCell>    </asp:TableCell></asp:TableRow>
+    <div class="container">
 
-
-        <asp:TableRow>
-
-            <asp:TableCell>  
+        <div class="row">
 
 
-            </asp:TableCell>
+            <div class="col-md-8"  id="brit"> 
 
 
+                
+                <img src="images/WhatsApp%20Image%202021-10-31%20at%208.02.50%20PM.jpeg" width="410" height="300" />
 
-            <asp:TableCell> 
+                <h3 style="margin-left:100px;color:black;font-weight:bold;"> Brittany Jackson</h3>
 
 
 
-            </asp:TableCell>
-
-
-            <asp:TableCell> 
-
-
-
-            </asp:TableCell>
-
-
-        </asp:TableRow>
+            </div>
 
 
 
 
-    </asp:Table>
 
+
+
+
+
+        </div>
+
+        <div  class="row">
+
+            <div class ="col-md-4 " id="mor">
+                <img src="images/WhatsApp%20Image%202021-10-31%20at%208.02.34%20PM.jpeg"   width="280" height="300" />
+
+                <h3 style="margin-left:30px;color:black;font-weight:bold;"> Morrissa Davidson</h3>
+
+
+            </div>
+
+
+
+                <div class ="col-md-4 " id="matt" >
+
+                    <img src="images/IMG-20190623-WA0113.jpg" style="margin-left:20px"  width="300" height="300"/>
+
+                     <h3 style="margin-left:50px;color:black;font-weight:bold;"> Matthieu-Rhys Brown</h3>
+            </div>
+
+
+
+
+                <div class ="col-md-4 " id="josh">
+
+                    <img src="images/PicsArt_21-09-26_08-55-48-729.jpg"  style="margin-left:20px"  width="300" height="300"/>
+
+                     <h3 style="margin-left:70px;color:black;font-weight:bold;"> Joshua Nathan</h3>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
 
     
 </asp:Content>

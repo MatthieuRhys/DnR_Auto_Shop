@@ -171,6 +171,7 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="AddToCart.aspx" />
+    <Content Include="Admin\Find Age.aspx" />
     <Content Include="Admin\Promotion.aspx" />
     <Content Include="Admin\Update Client.aspx" />
     <Content Include="Contact.aspx" />
@@ -198,7 +199,12 @@
     <Content Include="images\01-change-tyre-barum-data.jpg" />
     <Content Include="images\ball-joint-bolted-large.jpg" />
     <Content Include="images\front-suspension-design-1024x683.jpg" />
+    <Content Include="images\IMG-20190623-WA0113.jpg" />
     <Content Include="images\oil-change2.jpg" />
+    <Content Include="images\PicsArt_21-09-26_08-55-48-729.jpg" />
+    <Content Include="images\WhatsApp Image 2021-10-31 at 8.02.34 PM.jpeg" />
+    <Content Include="images\WhatsApp Image 2021-10-31 at 8.02.50 PM.jpeg" />
+    <Content Include="Test.aspx" />
     <Content Include="Verify2.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="images\6220621142_79b5881f-1316-404c-baaf-d9b8128b1e37.png" />
@@ -370,6 +376,13 @@
     <Compile Include="AddToCart.aspx.designer.cs">
       <DependentUpon>AddToCart.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Find Age.aspx.cs">
+      <DependentUpon>Find Age.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Find Age.aspx.designer.cs">
+      <DependentUpon>Find Age.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Promotion.aspx.cs">
       <DependentUpon>Promotion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -485,6 +498,13 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

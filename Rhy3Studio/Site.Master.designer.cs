@@ -42,6 +42,15 @@ namespace Rhy3Studio
         protected global::System.Web.UI.HtmlControls.HtmlAnchor promo;
 
         /// <summary>
+        /// age control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor age;
+
+        /// <summary>
         /// efflink control.
         /// </summary>
         /// <remarks>

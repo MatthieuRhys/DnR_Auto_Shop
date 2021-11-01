@@ -1,6 +1,9 @@
 ﻿	<%@ Page Title="Products" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" 
          CodeBehind="ProductList.aspx.cs" Inherits="Rhy3Studio.ProductList" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
+
+    
     <section>
         <div>
             <hgroup>
@@ -33,8 +36,8 @@
                             <tr>
                                 <td>
                                   <href="ProductDetails.aspx?productID=<%#:Item.ProductID%>">
-                                      <img src="/images/<%#:Item.ImagePath %>" width="300" height="250"
-                                          style="border:solid"? />
+                                      <img src="/images/<%#:Item.ImagePath %>" width="300" height="300"
+                                          style="border:solid" />
                                   </a>
                                 </td>
                             </tr>
@@ -82,4 +85,5 @@
             </asp:ListView>
         </div>
     </section>
+
 </asp:Content>
